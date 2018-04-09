@@ -5,13 +5,13 @@ def welcome(request):
 
 def restaurant_list(request):
     context = {
-        "restaurants":
+        "restaurants":,
     }
     return render(request, 'list.html', context)
 
 
 def restaurant_detail(request, restaurant_id):
     context = {
-        "restaurant":
+        "restaurant":,
     }
     return render(request, 'detail.html', context)
