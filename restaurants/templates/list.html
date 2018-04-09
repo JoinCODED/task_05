@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>List</title>
+    </head>
+    <body>
+        {% for obj in my_list %}
+            <ul>
+                <li>{{ obj.name }}</li>
+                <li>{{ obj.food_type }}</li>
+            </ul>
+        {% endfor %}
+    </body>
+</html>
