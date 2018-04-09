@@ -31,8 +31,6 @@ class RestaurantViewTestCase(TestCase):
             self.assertIn(restaurant, response.context['restaurants'])
             self.assertContains(response, restaurant.name)
             self.assertContains(response, restaurant.description)
-            self.assertContains(response, restaurant.opening_time)
-            self.assertContains(response, restaurant.closing_time)
         self.assertTemplateUsed(response, 'list.html')
         self.assertEqual(response.status_code, 200)
 
@@ -42,7 +40,5 @@ class RestaurantViewTestCase(TestCase):
         self.assertEqual(self.restaurant_1, response.context['restaurant'])
         self.assertContains(response, self.restaurant_1.name)
         self.assertContains(response, self.restaurant_1.description)
-        self.assertContains(response, restaurant_1.opening_time)
-        self.assertContains(response, restaurant_1.closing_time)
         self.assertTemplateUsed(response, 'detail.html')
         self.assertEqual(response.status_code, 200)
