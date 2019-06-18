@@ -1,5 +1,5 @@
 1. Setup a virtual environment.
-2. Fork the repository for [Django Task 05](https://github.com/JoinCODED/task_05) in JoinCODED’s Github and Clone it.
+2. Fork the repository and Clone it.
 3. Install the packages from the requirements file.
 4. The list view function has been partially written for you. Provide the dictionary key `restaurants` with the list of **all** `Restaurant` objects.
 5. Render the list of `Restaurant` objects to the HTML file provided. In the list view, you'll want to display minimum data (restaurant name and description).
